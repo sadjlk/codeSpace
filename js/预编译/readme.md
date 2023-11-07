@@ -37,9 +37,9 @@ function fn() {
 fn()
 var global
 AO = {
-global: undefined,200,300
+    lobal: undefined,200,300
 }
 Go = {
-global: undefined,100
-fn: function fn()
+    global: undefined,100
+    fn: function fn()
 }
