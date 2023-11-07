@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?etoci2');
+    src:  url('fonts/icomoon.eot?etoci2#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?etoci2') format('truetype'),
+      url('fonts/icomoon.woff?etoci2') format('woff'),
+      url('fonts/icomoon.svg?etoci2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  span {
+    font-family: 'icomoon';
+  }  
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.tb-promo {
+    position: relative;
+    width: 846px;
+    height: 472px;
+    margin: 100px auto;
+}
+.tb-promo img {
+    width: 846px;
+    height: 472px;
+}
+.prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 30px;
+    margin-top: -15px;
+    background-color: rgba(0, 0,0, .3);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 20px;
+    height: 30px;
+    margin-top: -15px;
+    background-color: rgba(0, 0,0, .3);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.promo-nav {
+    width: 70px;
+    height: 13px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 7px;
+}
+.promo-nav li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 3px;
+}
+.promo-nav .selected {
+    background-color: #ff5000;
+}

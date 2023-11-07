@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .guangzi {
+            position: relative;
+            width: 600px;
+            height: 100px;
+            background-color: pink;
+            margin: 100px auto;
+            text-align: center;
+            line-height: 100px;
+        }
+        .cha {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: 20px;
+            top: 10px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 20px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="guangzi">
+        <h1>广告</h1>
+        <div class="cha"><button>x</button></div>
+    </div>
+    <script>
+        const btn = document.querySelector('button')
+        btn.addEventListener('click',function fun() {
+            const div1 = document.querySelector('.guangzi')
+            div1.style.display = 'none'
+        })
+    </script>
+</body>
+</html>

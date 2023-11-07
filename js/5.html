@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            position: relative;
+            width: 800px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: pink;
+        }
+        .box2 {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 800;
+        }
+        .box3 {
+            position: absolute;
+            left: 30px;
+            top: 80px;
+            font-size: 24px;
+        }
+        .box4 {
+            position: absolute;
+            left: 200px;
+            bottom: 80px;
+        }
+        .box5 {
+            position: absolute;
+            right: 200px;
+            bottom: 80px;
+        }
+        button {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">随机问答</div>
+        <div class="box3">点到人的名字：贺浩</div>
+        <div class="box4"><button class="btn1">开始</button></div>
+        <div class="box5"><button class="btn2">结束</button></div>
+    </div>
+    <script>
+        //随机函数的序列号
+        let t = 0
+        //建立数据
+        const uname = ['贺浩','郭子健','程子燚','汤斌豪','占超']
+        //随机函数
+        function random() {
+            return Math.floor(Math.random()*uname.length)
+        }
+        //更换名字
+        function change() {
+            const box3 = document.querySelector('.box3')
+            const t = random()
+            console.log(10);
+            box3.innerHTML = `点到人的名字：${uname[t]}`
+        }
+        //点击开始按钮
+        const btn1 = document.querySelector('.btn1')
+        btn1.addEventListener('click',  function () {
+            //定时器函数
+            t = setInterval(function() {
+            //更换名字
+            const box3 = document.querySelector('.box3')
+            const t = random()
+            console.log(10);
+            box3.innerHTML = `点到人的名字：${uname[t]}`
+           },100)
+        })
+        //点击结束按钮
+        const btn2 = document.querySelector('.btn2')
+        btn2.addEventListener('click', function() {
+            clearInterval(t)
+        })
+    </script>
+</body>
+</html>
